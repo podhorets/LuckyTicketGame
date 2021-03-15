@@ -15,6 +15,8 @@ namespace LuckyTicketGame
             if (isInputValueValid)
             {
                 bool isNumberLucky = calculator.CheckIfNumberIsLucky(inputValue);
+
+                this.ShowResult(isNumberLucky);
             }
             else
             {
@@ -27,6 +29,18 @@ namespace LuckyTicketGame
             var inputValue = Console.ReadLine();
 
             return inputValue;
+        }
+
+        private void ShowResult(bool isNumberLucky)
+        {
+            if (isNumberLucky)
+            {
+                Message.ShowSuccessfulMessage();
+            }
+            else
+            {
+                Message.ShowNotSuccessfulMessage();
+            }
         }
     }
 }
