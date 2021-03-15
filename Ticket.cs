@@ -7,6 +7,8 @@ namespace LuckyTicketGame
         public void StartLuckyTicketGame()
         {
             string inputValue = this.GetInputValue();
+
+            bool isInputValueValid = Validator.CheckIfInputIsValid(inputValue);
         }
 
         private string GetInputValue()
