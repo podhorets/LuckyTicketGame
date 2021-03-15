@@ -6,7 +6,12 @@ namespace LuckyTicketGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Ticket ticket = new Ticket();
+
+            while (true)
+            {
+                ticket.StartLuckyTicketGame();
+            }
         }
     }
 }
