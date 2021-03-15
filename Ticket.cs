@@ -4,6 +4,8 @@ namespace LuckyTicketGame
 {
     class Ticket
     {
+        private readonly Calculator calculator = new Calculator();
+
         public void StartLuckyTicketGame()
         {
             string inputValue = this.GetInputValue();
@@ -12,7 +14,7 @@ namespace LuckyTicketGame
 
             if (isInputValueValid)
             {
-                
+                bool isNumberLucky = calculator.CheckIfNumberIsLucky(inputValue);
             }
             else
             {
