@@ -2,8 +2,10 @@
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Message.ShowWelcomeMessage();
+
             Ticket ticket = new Ticket();
 
             while (true)
