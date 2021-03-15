@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LuckyTicketGame
+﻿namespace LuckyTicketGame
 {
     class Program
     {
